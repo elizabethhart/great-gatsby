@@ -1,5 +1,9 @@
 import React from "react"
+import Nav from '../components/Nav';
 
 export default function ImagesPage() {
-  return <div>Images</div>
+  return <div>
+    <Nav />
+    Images
+  </div>
 }
