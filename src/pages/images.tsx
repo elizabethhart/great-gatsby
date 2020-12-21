@@ -1,11 +1,15 @@
 import React from "react"
-import Nav from '../components/Nav';
 
-const ImagesPage = () => {
-  return <div>
-    <Nav />
-    Images
-  </div>;
+interface ImagesProps {
+  //
+}
+
+const ImagesPage: React.FC<ImagesProps> = () => {
+  return (
+    <div>
+      Images
+    </div>
+  );
 }
 
 export default ImagesPage;

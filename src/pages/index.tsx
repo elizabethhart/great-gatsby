@@ -1,9 +1,15 @@
 import React from "react";
-import Nav from '../components/Nav';
 
-export default function HomePage() {
-  return <div>
-    <Nav />
-    Hello world!
-  </div>;
+interface HomePageProps {
+
 }
+
+const HomePage: React.FC<HomePageProps> = () => {
+  return (
+    <div>
+      Hello world!
+    </div>
+  );
+}
+
+export default HomePage;
