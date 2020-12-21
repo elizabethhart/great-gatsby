@@ -11,14 +11,20 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lint": "eslint . --ext ts --ext tsx'",
+    "test": "npm run type-check && npm run lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-plugin-typescript": "^2.9.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
     "prettier": "2.1.2"
   },
   "repository": {
